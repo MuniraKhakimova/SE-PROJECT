@@ -1,0 +1,26 @@
+.hp {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    height: 100vh;
+}
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 1rem 0;
+}
+.hp_text {
+    font-weight: bold;
+    font-size: 48px;
+}
+.hp_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+.product-card {
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+}

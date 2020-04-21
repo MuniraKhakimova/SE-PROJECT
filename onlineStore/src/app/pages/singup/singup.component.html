@@ -1,0 +1,16 @@
+<div class="login">
+    <div class="item">
+        <p>Email</p>
+        <input type="text" name="email" [(ngModel)]="model.email">
+    </div>
+    <div class="item">
+        <p>Password</p>
+        <input type="password" name="password" [(ngModel)]="model.password">
+    </div>
+    <div class="item">
+        <p>Confirm password</p>
+        <input type="password" name="password2" [(ngModel)]="model.password2">
+    </div>
+    <button (click)="onSubmit()">REGISTER</button>
+    <div class="change" routerLink="/login">LOGIN</div>
+</div>

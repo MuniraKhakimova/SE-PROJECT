@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Granny Smith Apples",
+        "imageURL": "https://www.freshdirect.com/media/images/product/fruit_2/fru_apl_grnsmth_4pk_z.jpg?lastModify=2016-04-15",
+        "description": "The tartness of a Granny Smith piques your palate, but then its deep sweetness comes out to balance the flavor. It's one of the few apples that stays autumn-crisp almost all year long. A prime eating apple that holds its shape and flavor in pies.",
+        "price": 700,
+        "category": "fruit"
+    },
+    {
+        "id": 2,
+        "name": "Candy Heart Grapes",
+        "imageURL": "https://www.freshdirect.com/media/images/product/fruit_2/fru_pid_2210275_z.jpg?lastModify=2015-05-15",
+        "description": "Next time the kids are craving candy, hand them a bowl of seedless Candy Heart grapes. Plump, red, and bursting with juice, they taste a little like raspberry lemonade and are just as refreshing. So go ahead and eat your heart out!",
+        "price": 1600,
+        "category": "fruit"
+    },
+    {
+        "id": 3,
+        "name": "Green Cucumber",
+        "imageURL": "https://www.freshdirect.com/media/images/product/veg_1/cuc_grn_z.jpg?lastModify=2016-05-02",
+        "description": "Cucumbers are green and fresh-tasting, with lots of water, crunch, and a light hint of honeydew melon in the aroma. They have a refreshing quality that reminds us of subtle mint. A cucumber is the gourmet's fire extinguisher  it's better than a glass of water to cool your mouth after eating spicy dishes like curry, blackened fish, or spicy cooked meats.",
+        "price": 300,
+        "category": "vegetables"
+    },
+    {
+        "id": 4,
+        "name": "Local Angus RWA Filet Mignon",
+        "imageURL": "https://www.freshdirect.com/media/images/product/meat_2/bstk_flet_cntrct_local_z.jpg?lastModify=2018-02-06",
+        "description": "The king among steaks — tender, velvety, delectable. Best when sautéed, broiled, or grilled. Cook quickly to preserve filet mignon's peerless texture. Try to resist overwhelming its subtle flavor with marinades. Instead, simply sprinkle with kosher salt and fresh ground pepper before cooking.",
+        "price": 5500,
+        "category": "meat & poultry"
+    },
+    {
+        "id": 5,
+        "name": "Little Gun Oysters ",
+        "imageURL": "https://www.freshdirect.com/media/images/product/seafood_1/sea_pid_3604167_z.jpg?lastModify=2019-08-20",
+        "description": "Located in Moriches Bay along Fire Island National Seashore, Great Gun Shellfish is raising some of the best tasting oysters on Long Island. The Little Gun is a cocktail size oyster that starts with a sharp brine upfront leading to a sweet buttery flavor to follow. Working with marine scientist from Stony Brook University, Great Gun Shellfish is also on the cutting edge of integrating oyster farming with kelp farming, not only diversifying crops, but contributing greatly to the sustainability and health of Long Islands estuaries.",
+        "price": 2700,
+        "category": "seafood"
+    },
+    {
+        "id": 6,
+        "name": "Amish Country Farms Organic Fat-Free Milk, Cartons",
+        "imageURL": "https://www.freshdirect.com/media/images/product/dairy_12/dai_amshcty_zcs_4_z.jpg?lastModify=2013-03-06",
+        "description": "Amish Country Farms works only with family owned farms where the cows enjoy a healthy life grazing out in wide open grassy fields. Happy cows produce the highest quality organic milk. With a '4 Cow' Excellent rating with the Cornucopia Institute, it's no wonder many families choose our variety of certified organic milk products.",
+        "price": 250,
+        "category": "dairy"
+    },
+    {
+        "id": 7,
+        "name": "FreshDirect Low Fat Mozzarella Cheese",
+        "imageURL": "https://www.freshdirect.com/media/images/product/deli_2/del_fd_lfmzz_z.jpg?lastModify=2010-07-19",
+        "description": "One of the all-time classics! This low-fat mozzarella has enough mild, milky flavor and smooth, creamy texture to keep even full-fat enthusiasts pleased. Perfect for grilled cheese sandwiches destined to be dipped into tomato soup.",
+        "price": 4000,
+        "category": "deli & cheese"
+    },
+    {
+        "id": 8,
+        "name": "Bread Alone Organic Whole Wheat Sourdough (Yeast Free) 'Miche'",
+        "imageURL": "https://www.freshdirect.com/media/images/product/grocery_49/gro_brdaln_wwsrd_z.jpg?lastModify=2019-05-03",
+        "description": "Made with organic whole wheat, this hearty bread has a wheat berry-colored crumb and a hard-won grainy crust. No other whole wheat bread has quite the finesse of our loaf. Serve with a local farmstead cheese and grainy mustard — then close your eyes and be transported to the wheatfields at harvest-time. Aahhh, the delight! (from Bread Alone)",
+        "price": 250,
+        "category": "bakery & pastry"
+    },
+    {
+        "id": 9,
+        "name": "Breyers Ice Cream, Natural Vanilla",
+        "imageURL": "https://www.freshdirect.com/media/images/product/frozen_10/fro_pid_3502593_z.jpg?lastModify=2016-03-18",
+        "description": "Our Original Vanilla. The way Vanilla should taste! Made with simple ingredients like fresh cream, sugar, milk, and Rainforest Alliance Certified vanilla beans. (from Breyers)",
+        "price": 1250,
+        "category": "frozen"
+    }
+]

@@ -1,0 +1,8 @@
+<div class="navbar">
+    <div class="navbar_items">
+        <div class="navbar_items__title">FILL YOUR CART</div>
+        <div *ngFor="let category of categories">
+            <a routerLink="/category/{{category.name}}" routerLinkActive="active">{{ category.name }}</a>
+        </div>
+    </div>
+</div>

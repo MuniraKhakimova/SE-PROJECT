@@ -1,0 +1,20 @@
+<div class="info">
+    <div class="left">
+        <div class="info_img"><img src="{{ product.imageURL }}" alt=""></div>
+        <div class="info_title">{{ product.name }}</div>
+        <div class="info_desc">Description: {{ product.description }}</div>
+        <div class="info_price">Price: {{ product.price }} tg.</div>
+    </div>
+    <div class="right">
+        <div class="title">MAKE AN ORDER</div>
+        <div class="item">
+            <p>Your name</p>
+            <input type="text" name="name" [(ngModel)]="userData.name" >
+        </div>
+        <div class="item">
+            <p>Phone number</p>
+            <input type="text" name="phone" [(ngModel)]="userData.phone">
+        </div>
+        <button (click)="onOrder()">ORDER</button>
+    </div>
+</div>

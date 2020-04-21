@@ -1,0 +1,12 @@
+<div class="login">
+    <div class="item">
+        <p>Email</p>
+        <input type="text" name="email" [(ngModel)]="model.email">
+    </div>
+    <div class="item">
+        <p>Password</p>
+        <input type="password" name="password" [(ngModel)]="model.password">
+    </div>
+    <button (click)="onSubmit()">LOGIN</button>
+    <div class="change" routerLink="/signup">REGISTRATION</div>
+</div>

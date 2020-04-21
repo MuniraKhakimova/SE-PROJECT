@@ -1,0 +1,23 @@
+<div class="admin">
+    <div class="item">
+        <p>Name</p>
+        <input type="text" name="name" [(ngModel)]="product.name">
+    </div>
+    <div class="item">
+        <p>IMGURL</p>
+        <input type="text" name="image" [(ngModel)]="product.image">
+    </div>
+    <div class="item">
+        <p>Description</p>
+        <textarea name="" id="" cols="30" rows="10" name="description" [(ngModel)]="product.description"></textarea>
+    </div>
+    <div class="item">
+        <p>Price</p>
+        <input type="text" name="price" [(ngModel)]="product.price">
+    </div>
+    <div class="item">
+        <p>Category</p>
+        <input type="text" name="category" [(ngModel)]="product.category">
+    </div>
+    <button (click)="onCreate()">ADD NEW PRODUCT</button>
+</div>

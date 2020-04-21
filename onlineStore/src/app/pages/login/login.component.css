@@ -1,0 +1,23 @@
+.login {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 1rem;
+}
+p {
+    margin: 0;
+    font-size: 14px;
+}
+button {
+    padding: 10px 3rem;
+    display: grid;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: rgb(17, 195, 207);
+}
+.change {
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}

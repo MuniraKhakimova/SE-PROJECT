@@ -1,0 +1,13 @@
+<div class="hp">
+    <div class="hp_text">ONLINE STORE</div>
+    <div class="title">MOST POPULAR PRODUCTS</div>
+    <div class="hp_list">
+        <div *ngFor="let product of products">
+            <div class="product-card" routerLink="/{{product.id}}">
+                <div class="tc_img"><img src="{{product.imageURL}}" alt=""></div>
+                <div class="tc_name">{{ product.name }}</div>
+                <div class="tc_price">{{ product.price }}</div>
+            </div>
+        </div>
+    </div>
+</div>
