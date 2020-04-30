@@ -10,7 +10,7 @@ export class UserServiceService {
   private httpHeaders = {
     headers: new HttpHeaders({ "Content-Type": "application/json"})
   }
-  private _url = 'http://localhost:8000/api/'
+  private _url = 'http://http://127.0.0.1:8000/api/'
 
   constructor(private http: HttpClient) { }
 

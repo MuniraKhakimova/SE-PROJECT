@@ -7,7 +7,7 @@ import { Categories } from '../interfaces/categories';
   providedIn: 'root'
 })
 export class CategoriesService {
-  private url:string = "http://localhost:8000/api/cats/ "
+  private url:string = "http://127.0.0.1:8000/api/cats/ "
   constructor(private http: HttpClient) {}
 
   get(): Observable<Categories[]> {
