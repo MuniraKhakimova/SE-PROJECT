@@ -10,3 +10,11 @@
     border: 1px solid #f0f0f0;
     cursor: pointer;
 }
+.pr_img {
+    width: 200px;
+
+}
+.pr_img img {
+    min-width: 100%;
+    min-height: 100%;
+}

@@ -7,16 +7,29 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProductsService {
-  private _url: string = "assets/data/products.json"
+  private _url: string = "http://localhost:8000/api/products/"
   constructor(private http: HttpClient) { }
+  httpOptions = {
+    headers: new HttpHeaders({'Content-Type': 'application/json'})
+  }
 
-  get():Observable<Products[]> {
+  getProducts():Observable<Products[]> {
     return this.http.get<Products[]>(this._url)
+  }
+  getSortedProducts(category):Observable<Products[]> {
+    return this.http.post<Products[]>(this._url + 'category/', {name: category}, this.httpOptions)
+  }
+  getProductById(id):Observable<Products> {
+    return this.http.get<Products>(this._url + id + '/')
   }
 
   create(product): Observable<Products> {
-    return this.http.post<Products>(this._url, product, {
-      headers: new HttpHeaders({'Content-Type': 'application/json'})
-    })
+    return this.http.post<Products>(this._url + 'admin/', product, this.httpOptions)
+  }
+  update(product): Observable<Products> {
+    return this.http.put<Products>(this._url + 'admin/', product, this.httpOptions)
+  }
+  delete(id): Observable<any> {
+    return this.http.delete<any>(this._url + 'admin/' + id + '/')
   }
 }

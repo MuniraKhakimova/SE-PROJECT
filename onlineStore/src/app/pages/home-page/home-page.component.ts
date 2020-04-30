@@ -11,7 +11,7 @@ export class HomePageComponent implements OnInit {
   constructor(private ps: ProductsService) { }
 
   ngOnInit(): void {
-    this.ps.get().subscribe(products => {
+    this.ps.getProducts().subscribe(products => {
       this.products = products
     })
   }

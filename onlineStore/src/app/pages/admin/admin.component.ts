@@ -7,23 +7,42 @@ import { ProductsService } from 'src/app/services/products.service';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
-
+  upd: boolean = false
+  productList = []
   product = {
+      id: 0,
       name: '',
       image: '',
       description: '',
       price: '',
-      category: ''
+      category: '',
+      cat: ''
   }
   
   constructor(private ts: ProductsService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { this.ts.getProducts().subscribe(data => { this.productList = data }) }
 
   onCreate() {
-    console.log(this.product)
-    this.ts.create(this.product)
+    if (this.upd) {
+      this.ts.update(this.product).subscribe()
+    }
+    else this.ts.create(this.product).subscribe()
   }
+
+  onUpd(id) {
+    this.upd = true
+    this.ts.getProductById(id).subscribe(
+      data => {
+        this.product.name = data.name
+        this.product.id = data.id
+        this.product.category = data.category.name
+        this.product.description = data.description
+        this.product.price = data.price
+        this.product.image = data.imageURL
+      })
+  }
+  onDel(id) { this.ts.delete(id).subscribe() }
+  
 
 }

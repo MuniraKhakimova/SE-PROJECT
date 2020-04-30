@@ -13,8 +13,9 @@ export class ProductsListPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe(param => {
-      this.ts.get().subscribe(data => {
-        this.products = data.filter(product => product.category.toUpperCase() == param.path)
+      let path = param.path.toLowerCase()
+      this.ts.getSortedProducts(path).subscribe(data => {
+        this.products = data
       })
     })
   }

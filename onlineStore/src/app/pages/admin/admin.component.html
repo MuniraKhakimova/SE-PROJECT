@@ -20,4 +20,16 @@
         <input type="text" name="category" [(ngModel)]="product.category">
     </div>
     <button (click)="onCreate()">ADD NEW PRODUCT</button>
+    <hr />
+    <div class="list">
+        <div *ngFor="let product of productList">
+            <div class="list_item">
+                <div class="list_item__title">
+                    {{product.name}}
+                </div>
+                <div class="delete" (click)="onDel(product.id)">del</div>
+                <div class="update" (click)="onUpd(product.id)">upd</div>
+            </div>
+        </div>
+    </div>
 </div>

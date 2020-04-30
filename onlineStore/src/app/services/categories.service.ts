@@ -7,7 +7,7 @@ import { Categories } from '../interfaces/categories';
   providedIn: 'root'
 })
 export class CategoriesService {
-  private url:string = "assets/data/categories.json"
+  private url:string = "http://localhost:8000/api/cats/ "
   constructor(private http: HttpClient) {}
 
   get(): Observable<Categories[]> {

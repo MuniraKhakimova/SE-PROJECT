@@ -3,5 +3,10 @@
         <a routerLink="/home-page">HOME</a>
     </div>
     <div class="logo">HIGH FRIDGE</div>
-    <div class="login"><button routerLink="/login">LOG IN</button></div>
+    <div *ngIf="!loggedIn">
+        <div class="login"><button routerLink="/login">LOG IN</button></div>
+    </div>
+    <div *ngIf="loggedIn">
+        <div class="login"><button (click)="logout()">LOG OUT</button></div>
+    </div>
 </div>

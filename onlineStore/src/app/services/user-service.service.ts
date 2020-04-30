@@ -10,7 +10,7 @@ export class UserServiceService {
   private httpHeaders = {
     headers: new HttpHeaders({ "Content-Type": "application/json"})
   }
-  private _url = 'django'
+  private _url = 'http://localhost:8000/api/'
 
   constructor(private http: HttpClient) { }
 

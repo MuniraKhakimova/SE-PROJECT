@@ -18,3 +18,25 @@ button {
     font-weight: bold;
     background: rgb(17, 195, 207);
 }
+.list {
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+}
+.list_item {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-gap: 1rem;
+    background: rgb(168, 168, 238);
+    align-items: center;
+}
+.list_item__title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.delete,
+.update {
+    cursor: pointer;
+    padding: 10px 1rem;
+    background: #f0f0f0;
+}

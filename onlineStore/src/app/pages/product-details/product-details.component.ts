@@ -16,18 +16,19 @@ export class ProductDetailsComponent implements OnInit {
 
   userData = {
     name: '',
-    phone: ''
+    phone: '',
+    product: 0
   }
   
   ngOnInit(): void {
-    this.ps.get().subscribe(data => {
-      this.product = data.find(product => product.id == parseInt(this.finder) )
+    this.ps.getProductById(this.finder).subscribe(data => {
+      this.product = data
     })
   }
 
   onOrder(): void {
-    console.log(this.userData)
-    this.us.order(this.userData)
+    this.userData.product = parseInt(this.finder)
+    this.us.order(this.userData).subscribe()
   }
 
 }
